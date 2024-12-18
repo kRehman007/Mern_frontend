@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const userApiSlice = createApi({
   reducerPath: "userAPI",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://mernbackend-production-a1f5.up.railway.app",
+    baseUrl: "https://backend-production-fabd.up.railway.app/",
     credentials: "include",
   }),
   endpoints: (builder) => ({
