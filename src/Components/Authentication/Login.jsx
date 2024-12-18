@@ -63,7 +63,6 @@ const Login = () => {
         >
           <Box
             sx={{
-              backgroundColor: "red",
               width: "48%",
               display: { xs: "none", md: "block" },
               height: "500px",
