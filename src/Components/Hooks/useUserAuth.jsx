@@ -9,9 +9,12 @@ const useUserAuth = () => {
   useEffect(() => {
     const fetchAuthUser = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/auth/check", {
-          withCredentials: true,
-        });
+        const response = await axios.get(
+          "https://mernbackend-production-a1f5.up.railway.app/auth/check",
+          {
+            withCredentials: true,
+          }
+        );
 
         setUser(response?.data?.user);
         setLoading(false);
