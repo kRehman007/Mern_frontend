@@ -7,7 +7,7 @@ import {
 export const courseAPISlice = createApi({
   reducerPath: "courseAPI",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://backend-production-fabd.up.railway.app/",
+    baseUrl: "https://backend-production-63cd.up.railway.app/",
   }),
   tagTypes: ["Ratings", "Students"],
   endpoints: (builder) => ({

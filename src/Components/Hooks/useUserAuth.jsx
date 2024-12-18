@@ -10,7 +10,7 @@ const useUserAuth = () => {
     const fetchAuthUser = async () => {
       try {
         const response = await axios.get(
-          "https://backend-production-fabd.up.railway.app/auth/check",
+          "https://backend-production-63cd.up.railway.app/auth/check",
           {
             withCredentials: true,
           }
