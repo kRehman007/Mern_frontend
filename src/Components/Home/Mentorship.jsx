@@ -25,7 +25,7 @@ const Mentorship = () => {
         A Step-by-Step Journey to Success
       </Typography>
       <Box>
-        <ul className="mt-2 list-disc list-outside pl-3">
+        <ul className="mt-5 list-disc list-outside pl-3">
           {Array.map((list, index) => (
             <li key={index} className="mb-1">
               {list}
