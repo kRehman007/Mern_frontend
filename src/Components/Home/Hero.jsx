@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Container, Typography, Stack, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useGetCourseMutation } from "../../Redux/API/courseAPI";
+import LoaderIcon from "../Loader";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const [getCourse] = useGetCourseMutation();
+  const [getCourse, { isLoading }] = useGetCourseMutation();
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     const fetchAllCourses = async () => {
@@ -16,6 +17,9 @@ const Hero = () => {
     fetchAllCourses();
   }, []);
 
+  if (isLoading) {
+    return <LoaderIcon />;
+  }
   return (
     <Container sx={{ mt: 5 }}>
       <Stack direction="column" gap={0}>
