@@ -49,7 +49,7 @@ function ReviewAndRatings() {
                 className="text-3xl font-semibold "
                 style={{ color: "#e91367" }}
               >
-                {data?.avgRating}
+                {(data?.avgRating ?? 0).toFixed(1)}
               </p>
               <Rating value={data?.avgRating ?? 0} readOnly size="large" />
             </div>
