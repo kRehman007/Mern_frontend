@@ -50,7 +50,7 @@ const Detail = () => {
       >
         Highlights
       </Typography>
-      <ul className="font-roboto list-disc list-inside">
+      <ul className="font-roboto list-disc list-outside pl-3 mt-1">
         {detail?.highlights?.map((highlight, index) => (
           <li className="mb-1" key={index}>
             {highlight}
