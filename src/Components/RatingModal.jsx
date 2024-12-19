@@ -72,7 +72,7 @@ const RatingModal = ({ open, handleClose, refetchRatings }) => {
         aria-describedby="spring-modal-description"
         open={open}
       >
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
           <Box sx={style} className="w-[350px] ">
             <Typography
               id="spring-modal-title"

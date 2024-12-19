@@ -97,6 +97,7 @@ const Login = () => {
             <form
               className=" w-full sm:w-3/4  flex flex-col gap-3 mt-5  mx-auto"
               onSubmit={handleSubmit(onSubmit)}
+              autoComplete="off"
             >
               <TextField
                 label="Email"

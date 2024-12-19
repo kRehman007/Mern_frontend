@@ -134,6 +134,7 @@ const Pannel = () => {
         <form
           className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8"
           onSubmit={handleSubmit(onSubmit)}
+          autoComplete="off"
         >
           <TextField
             label="Instructor Name"

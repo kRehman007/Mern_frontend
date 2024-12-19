@@ -122,7 +122,7 @@ export default function EnrollmentModal({ open, handleClose }) {
             Thank you for showing interest. Please proceed with the enrollment
             process.
           </Typography>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
             <div className="flex flex-col mt-5 gap-2">
               <TextField
                 size="small"

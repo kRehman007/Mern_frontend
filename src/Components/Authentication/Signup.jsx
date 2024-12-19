@@ -92,6 +92,7 @@ const Signup = () => {
             <form
               className=" w-full sm:w-3/4   flex flex-col gap-3 p-3   "
               onSubmit={handleSubmit(onSubmit)}
+              autoComplete="off"
             >
               <TextField
                 label="FullName"
