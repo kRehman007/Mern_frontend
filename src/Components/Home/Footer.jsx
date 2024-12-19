@@ -2,7 +2,7 @@ import { Typography, Container, Box, Stack, Link } from "@mui/material";
 import { BsFacebook } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
-import { FaSquareTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import React from "react";
 
 const Footer = () => {
@@ -34,17 +34,33 @@ const Footer = () => {
                 gap: 2,
               }}
             >
-              <Link href="#" color="#fff" underline="none">
+              <Link
+                href="https://www.facebook.com/profile.php?id=100056951512316&mibextid=ZbWKwL"
+                color="#fff"
+                underline="none"
+              >
                 <BsFacebook className="text-3xl" />
               </Link>
-              <Link href="#" color="#fff" underline="none">
+              <Link
+                href="https://www.linkedin.com/in/kashifdev/"
+                color="#fff"
+                underline="none"
+              >
                 <FaLinkedin className="text-3xl" />
               </Link>
-              <Link href="#" color="#fff" underline="none">
+              <Link
+                href="https://www.instagram.com/k_rehman_007/profilecard/?igsh=MTNlZXd5aHpub3drMg=="
+                color="#fff"
+                underline="none"
+              >
                 <FaSquareInstagram className="text-3xl" />
               </Link>
-              <Link href="#" color="#fff" underline="none">
-                <FaSquareTwitter className="text-3xl" />
+              <Link
+                href="https://github.com/kRehman007"
+                color="#fff"
+                underline="none"
+              >
+                <FaGithub className="text-3xl" />
               </Link>
             </Box>
           </Stack>
