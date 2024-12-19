@@ -50,18 +50,13 @@ const Detail = () => {
       >
         Highlights
       </Typography>
-      <Stack
-        direction="column"
-        gap={1}
-        sx={{ mt: 2, color: "#333" }}
-        className="font-roboto"
-      >
+      <ul className="font-roboto list-disc list-inside">
         {detail?.highlights?.map((highlight, index) => (
-          <Typography key={index}>
-            <li className="">{highlight}</li>
-          </Typography>
+          <li className="mb-1" key={index}>
+            {highlight}
+          </li>
         ))}
-      </Stack>
+      </ul>
     </Container>
   );
 };

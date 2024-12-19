@@ -115,6 +115,12 @@ const Login = () => {
                   "& .MuiInputBase-input": {
                     color: "#ffffff",
                   },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "#ffffff",
+                      opacity: 0.4,
+                    },
+                  },
                 }}
               />
               <TextField
@@ -132,6 +138,12 @@ const Login = () => {
                   },
                   "& .MuiInputBase-input": {
                     color: "#ffffff",
+                  },
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "#ffffff",
+                      opacity: 0.4,
+                    },
                   },
                 }}
               />
@@ -174,6 +186,7 @@ const Login = () => {
                   color: "#673ab7",
                   textDecoration: "underline",
                   fontSize: "14px",
+                  mt: -0.5,
                 }}
                 className="font-roboto underline-offset-4 pl-1 cursor-pointer"
               >

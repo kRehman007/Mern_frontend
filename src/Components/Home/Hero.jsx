@@ -11,7 +11,6 @@ const Hero = () => {
   useEffect(() => {
     const fetchAllCourses = async () => {
       const res = await getCourse();
-      console.log("getc", res);
       setCourses(res?.data?.courses);
     };
     fetchAllCourses();
